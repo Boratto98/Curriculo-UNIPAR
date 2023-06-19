@@ -1,0 +1,126 @@
+/* reset básico */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   background-color: #b0c4de;
+}
+
+.cabecalho p:first-child {
+   font-size: 2.7rem;
+   font-weight: bold;
+   color: white;
+   padding-top: 20px;
+}
+
+.cabecalho p:nth-child(2n) {
+   font-size: 1.6rem;
+   font-style: italic;
+   color: #696969;
+   margin-top: 15px;
+}
+
+.cabecalho p:nth-child(3n) {
+   font-size: 1.5rem;
+   margin-top: 15px;
+}
+
+.btn-imprimir {
+   font-weight: bold;
+   border-radius: 5px;
+   font-size: 1rem;
+   color: white;
+   background-color: #4682B4;
+   border: none;
+   height: 3.5rem;
+   width: 18rem;
+   margin: 15px;
+}
+
+.btn-imprimir:hover {
+   background-color: #3CB371;
+   color: white;
+   cursor: pointer;
+}
+
+.container {
+   width: 80%;
+   margin: 50px auto;
+}
+
+.dados-pessoais img {
+   float: right;
+   margin-left: 50px;
+   max-width: 40mm;
+}
+
+h1 {
+   font-size: 16pt;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+h2 {
+   font-size: 14pt;
+   font-weight: bold;
+   margin: 20px 0 10px 0;
+}
+
+p {
+   font-size: 11pt;
+   margin-bottom: 7px;
+}
+
+hr {
+   border: gray 1px solid;
+   margin-top: 10px;
+}
+
+.paragrafo p {
+   margin: 10px 0 15px 0;
+   line-height: 1.5;
+}
+
+.redes-sociais {
+   display: flex;
+   flex-direction: column;
+}
+
+.rede-social {
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.rede-social img {
+   clear: right;
+   width: 7mm;
+}
+
+.rede-social p {
+   display: inline-block;
+   margin-left: 10px;
+   margin-bottom: 0;
+}
+
+@media print {
+   .nao-imprime {
+      display: none;
+   }
+   .container {
+      width: 90%;
+      margin: 45px auto;
+   }
+}
